@@ -54,6 +54,7 @@
 //     }
 // }
 
+//added trigger - every minute
 pipeline {
     agent any
     triggers{
