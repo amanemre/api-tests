@@ -17,12 +17,12 @@ pipeline {
                 }
             }
             steps {
-                buildDockerImage("mtararujs/api-tests-base:latest", "Dockerfile.base")
+                buildDockerImage("amanemretdl/api-tests-base:latest", "Dockerfile.base")
             }
         }
         stage('docker-build-test-runner') {
             steps {
-                buildDockerImage("mtararujs/api-tests-runner:latest", "Dockerfile.runner")
+                buildDockerImage("amanemretdl/api-tests-runner:latest", "Dockerfile.runner")
             }
         }
     }
