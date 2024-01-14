@@ -1,0 +1,4 @@
+FROM amanemretdl/api-tests-base:latest
+
+COPY features features
+COPY smoke_tests.sh smoke_tests.sh
