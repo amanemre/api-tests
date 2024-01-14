@@ -10,6 +10,7 @@ class Environment
       flunk("TEST SCRIPT ERROR: Wrong environment name: #{env_name}. Supported environments: #{valid_envs}")
     end
 
+    
     case env_name
     when 'LOCAL'
       parameters[:api_host] = "http://python-greetings-app-local:3000"
